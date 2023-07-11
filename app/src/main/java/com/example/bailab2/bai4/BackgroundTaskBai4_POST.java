@@ -1,9 +1,11 @@
-package com.example.bailab2;
+package com.example.bailab2.bai4;
 
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.TextView;
+
+import com.example.bailab2.Bai2.Bai2Lab2;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -12,21 +14,27 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class BackdroundTask_POST extends AsyncTask<Void, Void, Void> {
-    String duongdan = Bai2Lab2.LAB2_LINK;
+public class BackgroundTaskBai4_POST extends AsyncTask<Void, Void, Void> {
+
+    String duongdan = Bai4Lab2.BAI4_LINK;
+
     Context context;
-    String strWith, strLength;
+
+    String strA, strB, strC;
+
     TextView tvResult;
+
     ProgressDialog progressDialog;
+
     String strResult;
 
-    public BackdroundTask_POST(Context context, String strWith, String strLength, TextView tvResult) {
+    public BackgroundTaskBai4_POST(Context context, String strA, String strB, String strC, TextView tvResult) {
         this.context = context;
-        this.strWith = strWith;
-        this.strLength = strLength;
+        this.strA = strA;
+        this.strB = strB;
+        this.strC = strC;
         this.tvResult = tvResult;
     }
-
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
@@ -38,10 +46,12 @@ public class BackdroundTask_POST extends AsyncTask<Void, Void, Void> {
     }
 
     @Override
-    protected Void doInBackground(Void... params) {
+    protected Void doInBackground(Void... voids) {
         try {
             URL url = new URL(duongdan);
-            String param = "rong="+ URLEncoder.encode(strWith, "utf-8") + "&dai=" +URLEncoder.encode(strLength, "utf-8");
+            String param = "a="+ URLEncoder.encode(strA, "utf-8")
+                    + "&b=" +URLEncoder.encode(strB, "utf-8")
+                    + "&c=" +URLEncoder.encode(strC, "utf-8");
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setDoOutput(true);
             urlConnection.setRequestMethod("POST");
@@ -65,7 +75,6 @@ public class BackdroundTask_POST extends AsyncTask<Void, Void, Void> {
         }
         return null;
     }
-
     @Override
     protected void onPostExecute(Void unused) {
         super.onPostExecute(unused);

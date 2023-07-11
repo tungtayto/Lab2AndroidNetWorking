@@ -1,4 +1,4 @@
-package com.example.bailab2;
+package com.example.bailab2.Bai1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.bailab2.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String SERVER_NAME = "http://192.168.1.91/kieuthanhtung_ph27675/student_GET.php";

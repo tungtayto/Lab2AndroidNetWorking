@@ -1,13 +1,15 @@
-package com.example.bailab2;
+package com.example.bailab2.Bai2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.bailab2.Bai2.BackdroundTask_POST;
+import com.example.bailab2.R;
 
 public class Bai2Lab2 extends AppCompatActivity implements View.OnClickListener {
     public static final String LAB2_LINK = "http://192.168.1.91/kieuthanhtung_ph27675/dientich_POST.php";

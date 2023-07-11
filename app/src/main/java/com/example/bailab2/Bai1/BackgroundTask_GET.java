@@ -1,10 +1,11 @@
-package com.example.bailab2;
+package com.example.bailab2.Bai1;
 
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
-import android.util.Log;
 import android.widget.TextView;
+
+import com.example.bailab2.Bai1.MainActivity;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

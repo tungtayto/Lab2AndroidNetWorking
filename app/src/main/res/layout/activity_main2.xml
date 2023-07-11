@@ -25,5 +25,23 @@
         android:text="Bai 2"
         android:onClick="Bai2"
         android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/btnBai3"
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Bai 3"
+        android:onClick="Bai3"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/btnBai4"
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Bai 4"
+        android:onClick="Bai4"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

@@ -15,8 +15,14 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".bai4.Bai4Lab2"
+            android:exported="false" />
+        <activity
+            android:name=".Bai3.Bai3Lab2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,13 +30,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Bai2Lab2"
-            android:exported="false">
-
-        </activity>
+            android:name=".Bai2.Bai2Lab2"
+            android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:name=".Bai1.MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
